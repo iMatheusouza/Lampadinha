@@ -1,0 +1,65 @@
+div {
+  margin: 0px;
+  width: 12rem;
+  height: 6rem;
+  background-color: #115f66;
+  color: white;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(5, 22, 24, 0.6);
+          box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(5, 22, 24, 0.6);
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div button {
+  background-color: #e2dada;
+  border-color: #e2dada;
+  margin: 0px;
+  border-radius: 15%;
+  max-width: 5rem;
+  margin-top: 0.4rem;
+}
+
+div button:hover {
+  background-color: #4a93e7;
+  border-color: #4a93e7;
+  color: white;
+}
+
+body > header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/bg-image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-image.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  max-width: 80vw;
+  margin: 2rem auto 0 auto;
+  text-align: justify;
+}
+
+body {
+  margin: 0px;
+}
+/*# sourceMappingURL=estilo.css.map */
