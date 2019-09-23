@@ -1,89 +1,45 @@
-@import "./animations";
-
 $buttonInactiveColor: rgb(226, 218, 218);
 $buttonActiveColor: rgb(74, 147, 231);
-$menusColor: rgb(53, 73, 160);
-$darkBackgroundColor: rgb(46, 42, 82);
+$divColor: rgb(17, 95, 102);
 
-// Top Menu and Background Image
-body{
-  margin: 0px;
-  padding: 0px;
-  color: white;
-  font-family: monospace;
-  font-size: 1.6rem;
-  background-color: $darkBackgroundColor;
-  > header {
-    // background-image: url("./bg-image.jpg");
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url("../images/bg-image.jpg"); 
-    background-size: cover; 
-    height: 100vh; 
-      > section{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-      }
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        background-color: $darkBackgroundColor;
-        max-height: 10%;
-      }
-        img {
-              max-width: 5%;
-              max-height: 5%;
 
-            }
-        ul {
-          display: flex;
-          list-style: none;
-            li{
-              padding: 5px;
-              margin: 5px;
-              a {
-                display: block;
-                text-decoration: none;
-                color: white;
-              }
-            }
-        }
-  }
-}
-
-// Central Circle with Button
 div {
+  margin: 0px;
   width: 12rem;
-  height: 12rem;
-  background-color: $darkBackgroundColor;
+  height: 6rem;
+  background-color: $divColor;
   color: white;
   box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(5, 22, 24, 0.6);
-  border-radius: 50%;
+  border-radius: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
-    &:hover{
-      animation: menuSpin 0.7s ease-out;
-    }
     button {
       background-color: $buttonInactiveColor;
       border-color: $buttonInactiveColor;
       margin: 0px;
       border-radius: 15%;
       max-width: 5rem;
-      margin-top: 2rem;    
-      transition: 1s;
-        &:hover{
-          background-color: $buttonActiveColor;
-          border-color: $buttonActiveColor;
-          color: white; 
-        }
+      margin-top: 0.4rem;    
+
+      &:hover{
+        background-color: $buttonActiveColor;
+        border-color: $buttonActiveColor;
+        color: white; 
+      }
     }
+}
+
+
+body {
+  > header {
+    // background-image: url("./bg-image.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/bg-image.jpg"); 
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
